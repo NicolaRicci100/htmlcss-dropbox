@@ -12,3 +12,48 @@ body{
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/* impostazioni riutilizzabili */
+.blue{
+    background-color: rgb(2,96,255);
+    padding: 7px 14px;
+    color: white;
+}
+
+
+/* TODO: classe per debug */
+.dashed{
+    border: 2px dashed black;
+}
+
+
+/* impostazioni header */
+header{
+    height: 90px;
+}
+
+.head-bar{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.head-bar nav{
+    flex-basis: calc(100% / 3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-bar nav img{
+    height: 30%;
+}
+
+header a{
+    color: rgb(80,80,80);
+    text-decoration: none;
+}
+
+
+
