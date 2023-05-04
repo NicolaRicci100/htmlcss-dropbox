@@ -10,15 +10,21 @@ body{
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
+
 /* impostazioni riutilizzabili */
-.blue{
+.blue{                                  /** BOTTONI BLU **/
     background-color: rgb(2,96,255);
-    padding: 7px 14px;
+    padding: 7px 13px;
     color: white;
+    text-decoration: none;
+}
+
+.azure{                                 /** SFONDI AZZURRI **/
+    background-color: rgb(179,208,231);
 }
 
 
@@ -38,6 +44,11 @@ header{
     background-color: white;
 }
 
+header a{
+    color: rgb(80,80,80);
+    text-decoration: none;
+}
+
 .head-bar{
     height: 100%;
     display: flex;
@@ -54,12 +65,47 @@ header{
 
 .head-bar nav img{
     height: 30%;
+    cursor: pointer;
 }
 
-header a{
-    color: rgb(80,80,80);
-    text-decoration: none;
+.head-bar a:hover{
+    border-bottom: 2px solid black;
 }
 
 
+/* impostazioni main */
+.jumbo{
+    height: 630px;
+    padding-top: 50px;
+}
 
+h1{
+    font-weight: 900;
+    font-size: 70px;
+}
+
+.card{
+    display: flex;
+    padding-top: 25px;
+}
+
+.card-description{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 15px;
+    align-items: baseline;
+    flex-basis: 75%;
+}
+
+.card-img img{
+    position: relative;
+    /* flex-basis: 30%; */
+    display: block;
+    max-width: 100%;
+}
+
+.fa-arrow-down{
+    font-size: 50px;
+    color: black;
+}
