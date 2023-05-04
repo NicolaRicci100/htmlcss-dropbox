@@ -19,6 +19,11 @@ body{
     margin: 0 auto;
 }
 
+hr{
+    width: 45px;
+    margin-bottom: 30px;
+}
+
 
 /* impostazioni riutilizzabili */
 .blue{                                  /** BOTTONI BLU **/
@@ -26,10 +31,15 @@ body{
     padding: 7px 13px;
     color: white;
     text-decoration: none;
+    font-size: 15px;
 }
 
 .azure{                                 /** SFONDI AZZURRI **/
     background-color: rgb(179,208,231);
+}
+
+.solid{
+    border: 1px solid gray;
 }
 
 
@@ -119,7 +129,7 @@ h1{
 /* sezione 2 */
 .buisness{
     padding-top: 100px;
-    height: 1000px;     /* TODO: temporaneo */
+    height: 2000px;     /* TODO: temporaneo */
 }
 
 h2{
@@ -142,6 +152,51 @@ h2{
     vertical-align: middle;
   }
 
-  .circle:hover{
+.circle:hover{
     border: 5px solid rgb(2,96,255);
+}
+
+.subscription{
+    display: flex;
+    height: 500px;
+    padding-top: 30px;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.column{
+    flex-basis: calc(100% / 3);
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.price p{
+    padding: 10px 0 0;
+    color: gray;
+}
+
+.column p{
+    font-size: 13px;
+}
+.column a{
+    align-self: center;
+}
+
+.top{
+    border-bottom: 1px solid gray;
+    text-align: center;
+    padding: 5px 0 5px;
+}
+
+.log{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.fa-check{
+    color: rgb(21,98,255);
+    font-size: 17px;
 }
