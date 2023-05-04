@@ -6,6 +6,7 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    padding-top: 90px;
 }
 
 .container{
@@ -30,6 +31,11 @@ body{
 /* impostazioni header */
 header{
     height: 90px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* z-index: 1; */
+    background-color: white;
 }
 
 .head-bar{
