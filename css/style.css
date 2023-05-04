@@ -24,6 +24,10 @@ hr{
     margin-bottom: 30px;
 }
 
+p{
+    font-size: 14px;
+}
+
 
 /* impostazioni riutilizzabili */
 .blue{                                  /** BOTTONI BLU **/
@@ -45,6 +49,10 @@ hr{
 .card{                                  /** FLEX CARD RICORRENTE **/
     display: flex;
     padding: 30px 0 30px;
+}
+
+.wrapper{
+    flex-wrap: wrap;
 }
 
 
@@ -224,7 +232,6 @@ h2{
 
 .row p{
     padding-top: 20px;
-    font-size: 13px;
 }
 
 /* sezione 3 */
@@ -252,4 +259,13 @@ h2{
 
 .items{
     flex-basis: calc(100% / 3);
+    padding: 20px;
+}
+
+.items img{
+   max-width: 90%;
+}
+
+.items h3{
+    padding-bottom: 20px;
 }
