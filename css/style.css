@@ -28,6 +28,10 @@ p{
     font-size: 14px;
 }
 
+ul, li{
+    list-style-type: none;
+}
+
 
 /* impostazioni riutilizzabili */
 .blue{                                  /** BOTTONI BLU **/
@@ -51,6 +55,10 @@ p{
     flex-wrap: wrap;
 }
 
+.flex{
+    display: flex;                      /** DISPLAY FLEX **/
+}
+
 /** COLORI BACKGROUND **/                       
 .azure{
     background-color: rgb(179,208,231);
@@ -72,6 +80,9 @@ p{
 }
 .yellow{
     background-color: rgb(255,215,47);
+}
+.black{
+    background-color: black;
 }
 /** **/
 
@@ -288,13 +299,6 @@ h2{
 }
 
 /* sezione 4 */
-.poster{
-    height: 1000px;  /* TODO temporaneo */
-}
-
-.poster h2{
-    margin-right: 40%;
-}
 
 .triple-square{
     display: flex;
@@ -348,3 +352,87 @@ h2{
     margin-top: 40px;
 }
 
+.bottom-rectangle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    margin-bottom: 50px;
+    align-content: center;
+}
+
+
+.bottom-rectangle h2{
+    padding: 0;
+    color: rgb(97,8,43);
+    flex-basis: 50%;
+}
+
+.bottom-rectangle a{
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    background-color: white;
+}
+
+.questions{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+
+.questions > div{
+    flex-basis: calc(100% / 3);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(216,216,219);
+    align-items: center;
+}
+
+.questions > div > div{
+    flex-basis: auto;
+}
+
+
+/* impostazioni footer */
+
+footer{
+    height: 500px;
+    padding: 50px 0 50px;
+}
+
+.macro-list{
+    display: flex;
+    color: white;
+}
+
+.list{
+    flex-basis: 20%;
+    flex-direction: column;
+}
+
+ul{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+li{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+footer .grey-line{
+    margin: 80px 0 40px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+}
