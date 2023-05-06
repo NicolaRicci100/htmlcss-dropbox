@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    padding-top: 90px;
+    padding-top: 70px;
 }
 
 .container{
@@ -33,13 +33,15 @@ ul, li{
 }
 
 
+
 /* impostazioni riutilizzabili */
 .blue{                                  /** BOTTONI BLU **/
     background-color: rgb(2,96,255);
-    padding: 7px 13px;
+    padding: 7px 14px;
     color: white;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 .solid{                                 /** BORDI GRIGI **/
@@ -57,6 +59,12 @@ ul, li{
 
 .flex{
     display: flex;                      /** DISPLAY FLEX **/
+}
+
+.large-button{
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 /** COLORI BACKGROUND **/                       
@@ -94,7 +102,7 @@ ul, li{
 
 /* impostazioni header */
 header{
-    height: 90px;
+    height: 70px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -106,20 +114,26 @@ header{
 header a{
     color: rgb(80,80,80);
     text-decoration: none;
+    font-size: 14px
 }
 
 .head-bar{
     height: 100%;
     display: flex;
+    gap: 30px;
+    padding: 0 15px;
     justify-content: space-between;
-    padding: 0 10px;
 }
 
 .head-bar nav{
     flex-basis: calc(100% / 3);
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 30px;
+}
+
+.head-bar nav:nth-child(2){
+    justify-content: flex-end;
 }
 
 .head-bar nav img{
@@ -137,7 +151,17 @@ header a{
 /* sezione 1 */
 .jumbo{
     height: 630px;
-    padding-top: 50px;
+    padding-top: 30px;
+}
+
+main a{
+    text-decoration: none;
+    color: white;
+}
+
+.link{
+    text-decoration: underline;
+    color: blue;
 }
 
 h1{
@@ -233,10 +257,47 @@ h2{
     gap: 30px;
 }
 
-.fa-check{
-    color: rgb(21,98,255);
-    font-size: 17px;
+/** liste con icone nelle colonne **/
+.awesome-list li{
+    text-indent: -0.5rem;
+    padding-left: 12px;
+    padding-bottom: 20px;
+    font-size: 14px;
 }
+
+.awesome-list li::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.awesome-list li.user::before{
+    font: var(--fa-font-solid);
+    content: "\f007";
+}
+
+.awesome-list li.users::before{
+    font: var(--fa-font-solid);
+    content: "\f0c0";
+}
+
+.awesome-list li.folder::before{
+    font: var(--fa-font-solid);
+    content: "\f07b";
+}
+
+.awesome-list li.share::before{
+    font: var(--fa-font-solid);
+    content: "\f1e0";
+}
+
+.awesome-list li.check::before{
+    font: var(--fa-font-solid);
+    content: "\f00c";
+    color: rgb(21,98,255);
+}
+/** **/
+
 
 .team{
     text-align: center;
@@ -384,12 +445,24 @@ h2{
     margin-bottom: 100px;
 }
 
+.dropdown{
+    display: none;
+    font-weight: 400;
+}
+.questions div:hover .dropdown{
+    display: block;
+}
+.questions div:hover .fa-angle-down{
+    transform: rotate(180deg);
+}
+
 .questions > div{
     flex-basis: calc(100% / 3);
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgb(216,216,219);
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .questions > div > div{
@@ -414,13 +487,13 @@ footer{
     flex-direction: column;
 }
 
-ul{
+footer ul{
     font-size: 20px;
     font-weight: 600;
     line-height: 60px;
 }
 
-li{
+footer li{
     font-size: 15px;
     font-weight: 400;
     line-height: 35px;
